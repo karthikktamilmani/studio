@@ -8,7 +8,9 @@
   },
   "hero": {
     "title": "Su Socio de Confianza en Ciberseguridad",
-    "subtitle": "Protegiendo sus activos digitales con soluciones de vanguardia y asesoramiento experto."
+    "subtitle": "Protegiendo sus activos digitales con soluciones de vanguardia y asesoramiento experto.",
+    "ctaPrimary": "Comenzar Gratis",
+    "ctaSecondary": "Solicitar una Demostración"
   },
   "services": {
     "title": "Nuestros Servicios de Ciberseguridad",
@@ -44,6 +46,22 @@
       "nis2-compliance": {
         "name": "Cumplimiento de NIS 2",
         "description": "Ayudar a implementar los controles y mecanismos de reporte necesarios para cumplir con las regulaciones de la UE y fortalecer la resiliencia de la ciberseguridad organizacional."
+      },
+      "managed-security-services": {
+        "name": "Servicios de Seguridad Gestionados (MSSP)",
+        "description": "Monitorización y gestión integral y externalizada de dispositivos y sistemas de seguridad."
+      },
+      "cloud-security": {
+        "name": "Seguridad en la Nube",
+        "description": "Asegure sus entornos en la nube (AWS, Azure, GCP) con nuestras soluciones y experiencia especializadas."
+      },
+      "data-loss-prevention": {
+        "name": "Prevención de Pérdida de Datos (DLP)",
+        "description": "Implemente estrategias y herramientas para evitar que datos confidenciales salgan del control de su organización."
+      },
+      "endpoint-detection-response": {
+        "name": "Detección y Respuesta en Endpoints (EDR)",
+        "description": "Protección avanzada para endpoints para detectar, investigar y responder a amenazas."
       }
     }
   },

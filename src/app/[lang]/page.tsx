@@ -3,7 +3,9 @@ import { siteConfig, type Locale } from '@/config/site';
 import { getDictionary } from '@/lib/get-dictionary';
 import ContactForm from '@/components/ContactForm';
 import ServiceCard from '@/components/ServiceCard';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Phone, Mail, MapPin, ChevronRight } from 'lucide-react';
+import Image from 'next/image';
+import { Button } from '@/components/ui/button'; // Ensure Button is imported
 
 export default async function HomePage({ params: { lang } }: { params: { lang: Locale } }) {
   const dictionary = await getDictionary(lang);
@@ -11,21 +13,52 @@ export default async function HomePage({ params: { lang } }: { params: { lang: L
 
   return (
     <div className="space-y-16 md:space-y-24">
-      {/* Hero Section - Image Background */}
+      {/* Hero Section - Updated Two-Column Layout */}
       <section
         id="home"
-        className="relative text-center py-24 md:py-32 bg-cover bg-center"
-        style={{ backgroundImage: "url('https://placehold.co/1920x600.png')" }}
-        data-ai-hint="abstract network"
+        className="text-white bg-gradient-to-br from-slate-900 via-purple-800 to-indigo-800 py-20 md:py-28 lg:py-32"
       >
-        <div className="absolute inset-0 bg-black/60 backdrop-brightness-75"></div> {/* Overlay for contrast */}
-        <div className="relative container mx-auto px-4 z-10">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-md">
-            {heroTranslations.title}
-          </h1>
-          <p className="text-lg md:text-xl text-neutral-200 max-w-3xl mx-auto drop-shadow-sm">
-            {heroTranslations.subtitle}
-          </p>
+        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid md:grid-cols-12 gap-8 lg:gap-16 items-center">
+            <div className="md:col-span-7 lg:col-span-7 text-left">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
+                {heroTranslations.title}
+              </h1>
+              <p className="text-lg md:text-xl text-neutral-200 mb-10 max-w-2xl">
+                {heroTranslations.subtitle}
+              </p>
+              <div className="flex flex-col sm:flex-row items-start gap-4">
+                <Button
+                  className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-3 rounded-lg shadow-lg transform transition hover:scale-105 duration-300 ease-in-out"
+                  // Add Link behavior if this is a navigation item: asChild
+                  // href={`/${lang}/try-free`}
+                >
+                  {heroTranslations.ctaPrimary || "Try it Free"}
+                </Button>
+                <Button
+                  variant="link"
+                  className="text-white hover:text-purple-300 font-semibold px-8 py-3 group flex items-center transition duration-300 ease-in-out"
+                  // Add Link behavior if this is a navigation item: asChild
+                  // href={`/${lang}/request-demo`}
+                >
+                  {heroTranslations.ctaSecondary || "Request a Demo"}
+                  <ChevronRight className="ml-2 h-5 w-5 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />
+                </Button>
+              </div>
+            </div>
+            <div className="md:col-span-5 lg:col-span-5 mt-10 md:mt-0">
+              <div className="relative w-full aspect-[3/4] sm:aspect-square md:aspect-[4/5] lg:aspect-[3/4] rounded-xl overflow-hidden shadow-2xl mx-auto max-w-xs sm:max-w-sm md:max-w-none transform transition hover:scale-105 duration-300 ease-in-out">
+                <Image
+                  src="https://placehold.co/600x800.png"
+                  alt={heroTranslations.title}
+                  fill
+                  className="object-cover"
+                  data-ai-hint="person interacting software interface"
+                  priority
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 

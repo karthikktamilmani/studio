@@ -8,7 +8,9 @@
   },
   "hero": {
     "title": "Your Trusted Partner in Cybersecurity",
-    "subtitle": "Protecting your digital assets with cutting-edge solutions and expert guidance."
+    "subtitle": "Protecting your digital assets with cutting-edge solutions and expert guidance.",
+    "ctaPrimary": "Get Started Free",
+    "ctaSecondary": "Request a Demo"
   },
   "services": {
     "title": "Our Cybersecurity Services",
@@ -44,6 +46,22 @@
       "nis2-compliance": {
         "name": "NIS 2 Compliance",
         "description": "Help implement the necessary controls and reporting mechanisms to meet EU regulations and strengthen organizational cybersecurity resilience."
+      },
+      "managed-security-services": {
+        "name": "Managed Security Services (MSSP)",
+        "description": "Comprehensive, outsourced monitoring and management of security devices and systems."
+      },
+      "cloud-security": {
+        "name": "Cloud Security",
+        "description": "Secure your cloud environments (AWS, Azure, GCP) with our specialized solutions and expertise."
+      },
+      "data-loss-prevention": {
+        "name": "Data Loss Prevention (DLP)",
+        "description": "Implement strategies and tools to prevent sensitive data from leaving your organization's control."
+      },
+      "endpoint-detection-response": {
+        "name": "Endpoint Detection & Response (EDR)",
+        "description": "Advanced protection for endpoints to detect, investigate, and respond to threats."
       }
     }
   },

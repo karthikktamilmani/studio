@@ -1,7 +1,9 @@
-import type {NextConfig} from 'next';
+import type { NextConfig } from 'next';
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  output: 'export',
+  basePath: '/studio',
+  assetPrefix: '/studio/',
   typescript: {
     ignoreBuildErrors: true,
   },

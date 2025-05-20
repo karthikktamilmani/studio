@@ -98,21 +98,21 @@ export default async function HomePage({ params: { lang } }: { params: { lang: L
             {/* Contact Info section: uses theme text colors */}
             <div className="md:col-span-2 space-y-6 pt-0 md:pt-8">
               <h3 className="text-2xl font-semibold mb-6 text-primary">{contactTranslations.info.sectionTitle}</h3>
-              <div className="flex items-start space-x-4 p-4 bg-secondary/30 rounded-md hover:shadow-lg hover:bg-secondary/50 transition-all duration-200 ease-in-out transform hover:-translate-y-1">
+              <div className="flex items-start space-x-4 p-4 bg-primary/10 rounded-md hover:shadow-lg hover:bg-primary/20 transition-all duration-200 ease-in-out transform hover:-translate-y-1">
                 <Phone className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-semibold text-primary">{contactTranslations.info.phone}</h4>
                   <a href={`tel:${siteConfig.contact.phone}`} className="text-foreground/80 hover:text-accent transition-colors">{siteConfig.contact.phone}</a>
                 </div>
               </div>
-              <div className="flex items-start space-x-4 p-4 bg-secondary/30 rounded-md hover:shadow-lg hover:bg-secondary/50 transition-all duration-200 ease-in-out transform hover:-translate-y-1">
+              <div className="flex items-start space-x-4 p-4 bg-primary/10 rounded-md hover:shadow-lg hover:bg-primary/20 transition-all duration-200 ease-in-out transform hover:-translate-y-1">
                 <Mail className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-semibold text-primary">{contactTranslations.info.email}</h4>
                   <a href={`mailto:${siteConfig.contact.email}`} className="text-foreground/80 hover:text-accent transition-colors">{siteConfig.contact.email}</a>
                 </div>
               </div>
-              <div className="flex items-start space-x-4 p-4 bg-secondary/30 rounded-md hover:shadow-lg hover:bg-secondary/50 transition-all duration-200 ease-in-out transform hover:-translate-y-1">
+              <div className="flex items-start space-x-4 p-4 bg-primary/10 rounded-md hover:shadow-lg hover:bg-primary/20 transition-all duration-200 ease-in-out transform hover:-translate-y-1">
                 <MapPin className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-semibold text-primary">{contactTranslations.info.address}</h4>

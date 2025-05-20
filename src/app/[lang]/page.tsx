@@ -1,3 +1,4 @@
+
 import { siteConfig, type Locale } from '@/config/site';
 import { getDictionary } from '@/lib/get-dictionary';
 import ContactForm from '@/components/ContactForm';
@@ -11,7 +12,7 @@ export default async function HomePage({ params: { lang } }: { params: { lang: L
   return (
     <div className="space-y-16 md:space-y-24">
       {/* Hero Section */}
-      <section id="home" className="text-center py-12 md:py-20 bg-gradient-to-br from-primary/5 via-background to-accent/5 rounded-xl shadow-sm">
+      <section id="home" className="text-center py-16 md:py-24 bg-secondary/30 rounded-xl shadow-lg">
         <div className="container mx-auto px-4">
           <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary mb-6 leading-tight">
             {heroTranslations.title}
@@ -44,34 +45,34 @@ export default async function HomePage({ params: { lang } }: { params: { lang: L
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-12 md:py-16 bg-card rounded-xl shadow-lg">
+      <section id="contact" className="py-12 md:py-16 bg-card rounded-xl shadow-xl">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-primary">
             {contactTranslations.title}
           </h2>
           <div className="grid md:grid-cols-2 gap-12 items-start max-w-5xl mx-auto">
-            <div className="bg-background p-6 sm:p-8 rounded-lg shadow-md">
+            <div className="bg-background p-6 sm:p-8 rounded-lg shadow-lg"> {/* Enhanced shadow */}
               <h3 className="text-2xl font-semibold mb-6 text-primary">{contactTranslations.form.submit}</h3>
               <ContactForm dictionary={contactTranslations.form} />
               <p className="mt-4 text-xs text-muted-foreground">{contactTranslations.formSubmissionNote}</p>
             </div>
             <div className="space-y-6 pt-0 md:pt-8">
               <h3 className="text-2xl font-semibold mb-6 text-primary">{contactTranslations.info.sectionTitle}</h3>
-              <div className="flex items-start space-x-4 p-4 bg-secondary/30 rounded-md hover:shadow-sm transition-shadow">
+              <div className="flex items-start space-x-4 p-4 bg-secondary/30 rounded-md hover:shadow-md transition-shadow">
                 <Phone className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-semibold text-primary">{contactTranslations.info.phone}</h4>
                   <a href={`tel:${siteConfig.contact.phone}`} className="text-foreground/80 hover:text-accent transition-colors">{siteConfig.contact.phone}</a>
                 </div>
               </div>
-              <div className="flex items-start space-x-4 p-4 bg-secondary/30 rounded-md hover:shadow-sm transition-shadow">
+              <div className="flex items-start space-x-4 p-4 bg-secondary/30 rounded-md hover:shadow-md transition-shadow">
                 <Mail className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-semibold text-primary">{contactTranslations.info.email}</h4>
                   <a href={`mailto:${siteConfig.contact.email}`} className="text-foreground/80 hover:text-accent transition-colors">{siteConfig.contact.email}</a>
                 </div>
               </div>
-              <div className="flex items-start space-x-4 p-4 bg-secondary/30 rounded-md hover:shadow-sm transition-shadow">
+              <div className="flex items-start space-x-4 p-4 bg-secondary/30 rounded-md hover:shadow-md transition-shadow">
                 <MapPin className="h-6 w-6 text-primary flex-shrink-0 mt-1" />
                 <div>
                   <h4 className="font-semibold text-primary">{contactTranslations.info.address}</h4>

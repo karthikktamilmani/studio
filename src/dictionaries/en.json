@@ -28,6 +28,22 @@
       "security-consulting": {
         "name": "Security Consulting",
         "description": "Tailored advice and strategic planning to enhance your overall security posture."
+      },
+      "access-governance": {
+        "name": "Access Governance",
+        "description": "Help organizations implement effective frameworks to ensure the right individuals have the appropriate access to systems and data."
+      },
+      "vulnerability-management": {
+        "name": "Vulnerability Management",
+        "description": "Provide end-to-end vulnerability management services, from continuous scanning and risk-based prioritization to remediation planning."
+      },
+      "security-awareness-training": {
+        "name": "Security Awareness Training",
+        "description": "Deliver engaging, tailored security awareness training programs to promote security awareness in organization."
+      },
+      "nis2-compliance": {
+        "name": "NIS 2 Compliance",
+        "description": "Help implement the necessary controls and reporting mechanisms to meet EU regulations and strengthen organizational cybersecurity resilience."
       }
     }
   },

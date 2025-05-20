@@ -28,6 +28,22 @@
       "security-consulting": {
         "name": "Consultoría de Seguridad",
         "description": "Asesoramiento personalizado y planificación estratégica para mejorar su postura general de seguridad."
+      },
+      "access-governance": {
+        "name": "Gobernanza de Acceso",
+        "description": "Ayudar a las organizaciones a implementar marcos efectivos para garantizar que las personas adecuadas tengan el acceso apropiado a los sistemas y datos."
+      },
+      "vulnerability-management": {
+        "name": "Gestión de Vulnerabilidades",
+        "description": "Proporcionar servicios integrales de gestión de vulnerabilidades, desde el escaneo continuo y la priorización basada en riesgos hasta la planificación de la remediación."
+      },
+      "security-awareness-training": {
+        "name": "Capacitación en Conciencia de Seguridad",
+        "description": "Ofrecer programas de capacitación en conciencia de seguridad atractivos y personalizados para promover la conciencia de seguridad en la organización."
+      },
+      "nis2-compliance": {
+        "name": "Cumplimiento de NIS 2",
+        "description": "Ayudar a implementar los controles y mecanismos de reporte necesarios para cumplir con las regulaciones de la UE y fortalecer la resiliencia de la ciberseguridad organizacional."
       }
     }
   },

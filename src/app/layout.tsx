@@ -25,10 +25,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en"> {/* Default lang, will be effectively overridden by [lang] segment context */}
+    <html lang="en">
       <body className={`${geistSans.variable} ${geistMono.variable} antialiased flex flex-col min-h-screen`}>
         {children}
-        <Toaster /> {/* Toaster placed in root layout for global access */}
+        <Toaster />
       </body>
     </html>
   );

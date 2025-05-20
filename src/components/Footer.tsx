@@ -1,3 +1,4 @@
+
 interface FooterProps {
   footerDictionary: {
     copyright: string;
@@ -12,7 +13,7 @@ export default function Footer({ footerDictionary, organizationName }: FooterPro
     .replace('{organizationName}', organizationName);
 
   return (
-    <footer className="bg-secondary text-secondary-foreground py-8 text-center mt-auto">
+    <footer className="bg-brand-dark-slate text-brand-off-white py-8 text-center mt-auto">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <p className="text-sm">{copyrightText}</p>
       </div>

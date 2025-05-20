@@ -1,0 +1,62 @@
+
+{
+  "organizationName": "SecureGlobal",
+  "nav": {
+    "home": "Inicio",
+    "services": "Servicios",
+    "contact": "Contacto"
+  },
+  "hero": {
+    "title": "Su Socio de Confianza en Ciberseguridad",
+    "subtitle": "Protegiendo sus activos digitales con soluciones de vanguardia y asesoramiento experto."
+  },
+  "services": {
+    "title": "Nuestros Servicios de Ciberseguridad",
+    "offerings": {
+      "threat-detection": {
+        "name": "Detección y Respuesta a Amenazas",
+        "description": "Monitoreo proactivo y respuesta rápida para identificar y neutralizar amenazas antes de que impacten su negocio."
+      },
+      "vulnerability-assessment": {
+        "name": "Evaluación de Vulnerabilidades",
+        "description": "Análisis y escaneo exhaustivo para descubrir debilidades en sus sistemas e infraestructura."
+      },
+      "incident-response": {
+        "name": "Respuesta a Incidentes",
+        "description": "Asistencia experta para gestionar y recuperarse de incidentes de seguridad, minimizando daños y tiempo de inactividad."
+      },
+      "security-consulting": {
+        "name": "Consultoría de Seguridad",
+        "description": "Asesoramiento personalizado y planificación estratégica para mejorar su postura general de seguridad."
+      }
+    }
+  },
+  "contact": {
+    "title": "Contáctenos",
+    "form": {
+      "name": "Su Nombre",
+      "email": "Su Correo Electrónico",
+      "message": "Su Mensaje",
+      "submit": "Enviar Mensaje",
+      "submissionSuccessTitle": "¡Mensaje Enviado!",
+      "submissionSuccessDescription": "Gracias por contactarnos. Nos pondremos en contacto con usted en breve. (Demo)",
+      "submissionErrorTitle": "Error de Envío",
+      "submissionErrorDescription": "Algo salió mal. Por favor, inténtelo de nuevo. (Demo)"
+    },
+    "info": {
+      "sectionTitle": "Información de Contacto",
+      "phone": "Teléfono",
+      "email": "Correo Electrónico",
+      "address": "Dirección"
+    },
+    "formSubmissionNote": "Nota: El envío del formulario es solo para fines de demostración y se registra en la consola."
+  },
+  "footer": {
+    "copyright": "© {year} {organizationName}. Todos los derechos reservados."
+  },
+  "languageSwitcher": {
+    "label": "Cambiar idioma",
+    "en": "Inglés (English)",
+    "es": "Español"
+  }
+}

@@ -5,96 +5,96 @@
 
 @layer base {
   :root {
-    --background: 240 10% 97%; /* Very light cool gray, almost white */
-    --foreground: 240 10% 15%; /* Very dark cool gray, for text */
+    --background: 45 60% 97%; /* Very light, warm cream/off-white */
+    --foreground: 120 25% 20%; /* Dark, desaturated green-gray for text */
 
     --card: 0 0% 100%; /* White cards */
-    --card-foreground: 240 10% 15%; /* Text on cards */
+    --card-foreground: 120 25% 20%; /* Text on cards */
 
     --popover: 0 0% 100%;
-    --popover-foreground: 240 10% 15%;
+    --popover-foreground: 120 25% 20%;
 
-    --primary: 265 70% 55%; /* Vibrant Purple */
-    --primary-foreground: 0 0% 100%; /* White text on primary */
+    --primary: 140 40% 30%; /* Deep, sophisticated Forest Green */
+    --primary-foreground: 45 60% 97%; /* Creamy white text on primary */
 
-    --secondary: 265 60% 94%; /* Very Light Purple */
-    --secondary-foreground: 265 70% 40%; /* Darker Purple for text on light purple */
+    --secondary: 140 30% 92%; /* Very Light Sage Green */
+    --secondary-foreground: 140 40% 25%; /* Darker Green for text on light green */
 
-    --muted: 240 5% 95%; /* Light Gray for muted backgrounds */
-    --muted-foreground: 240 5% 45%; /* Medium Gray text for muted */
+    --muted: 120 10% 94%; /* Light Cool Gray for muted backgrounds */
+    --muted-foreground: 120 10% 45%; /* Medium Gray text for muted */
 
-    --accent: 280 75% 60%; /* Bright Magenta-Purple */
-    --accent-foreground: 0 0% 100%; /* White text on accent */
+    --accent: 35 65% 55%; /* Muted Gold/Tan */
+    --accent-foreground: 0 0% 100%; /* White/Cream text on accent */
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 240 5% 88%; /* Border color, slightly darker than light gray */
-    --input: 240 5% 92%; /* Input background / border */
-    --ring: 280 75% 60%; /* Accent color for rings (matches accent) */
+    --border: 120 10% 85%; /* Cool Gray border */
+    --input: 120 10% 90%; /* Input background / border */
+    --ring: 140 40% 30%; /* Primary color for rings */
 
-    --chart-1: 265 70% 60%; /* Purple */
-    --chart-2: 280 75% 65%; /* Magenta-Purple */
-    --chart-3: 300 60% 55%; /* Deeper Pink/Magenta */
-    --chart-4: 220 20% 70%; /* Cool Gray */
-    --chart-5: 240 10% 50%; /* Mid Gray */
-    --radius: 0.5rem;
+    --chart-1: 140 40% 45%; /* Primary Green variant */
+    --chart-2: 35 65% 60%; /* Accent Gold variant */
+    --chart-3: 140 30% 60%; /* Lighter Green */
+    --chart-4: 120 10% 70%; /* Cool Gray */
+    --chart-5: 120 10% 50%; /* Mid Gray */
+    --radius: 0.3rem; /* Slightly sharper radius */
 
     /* Sidebar colors adjusted to new theme */
-    --sidebar-background: 240 10% 98%; /* Almost white, like main background */
-    --sidebar-foreground: 240 10% 20%; /* Dark text for sidebar */
-    --sidebar-primary: 265 70% 55%; /* Same as main primary */
-    --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 265 60% 92%; /* Lighter version of primary for accents */
-    --sidebar-accent-foreground: 265 70% 35%; /* Darker text for sidebar accent */
-    --sidebar-border: 240 5% 85%;
-    --sidebar-ring: 280 75% 60%;
+    --sidebar-background: 45 60% 97%; /* Same as main background */
+    --sidebar-foreground: 120 25% 20%; /* Dark text for sidebar */
+    --sidebar-primary: 140 40% 30%; /* Same as main primary */
+    --sidebar-primary-foreground: 45 60% 97%;
+    --sidebar-accent: 140 30% 90%; /* Lighter version of primary for accents */
+    --sidebar-accent-foreground: 140 40% 25%; /* Darker text for sidebar accent */
+    --sidebar-border: 120 10% 80%;
+    --sidebar-ring: 35 65% 55%; /* Accent color for ring */
   }
 
   .dark {
-    --background: 230 15% 10%; /* Very Dark Slate/Blue-Gray, like slate-900 */
-    --foreground: 230 10% 88%; /* Light gray text */
+    --background: 140 10% 10%; /* Very dark, desaturated green-black */
+    --foreground: 140 15% 88%; /* Light grayish-green text */
 
-    --card: 230 12% 14%; /* Darker Slate, slightly lighter than background */
-    --card-foreground: 230 10% 88%;
+    --card: 140 8% 14%; /* Darker green-slate, slightly lighter than background */
+    --card-foreground: 140 15% 88%;
 
-    --popover: 230 12% 14%;
-    --popover-foreground: 230 10% 88%;
+    --popover: 140 8% 14%;
+    --popover-foreground: 140 15% 88%;
 
-    --primary: 265 75% 68%; /* Vibrant Purple, visible on dark bg - like purple-600/purple-700 */
-    --primary-foreground: 0 0% 100%;
+    --primary: 140 45% 50%; /* Forest Green, slightly brighter for dark mode */
+    --primary-foreground: 0 0% 100%; /* White text */
 
-    --secondary: 265 40% 22%; /* Dark Muted Purple */
-    --secondary-foreground: 265 60% 75%; /* Lighter Purple for text on dark secondary */
+    --secondary: 140 15% 20%; /* Dark Muted Green */
+    --secondary-foreground: 140 30% 75%; /* Lighter Green for text on dark secondary */
 
-    --muted: 230 10% 18%; /* Dark gray for muted backgrounds */
-    --muted-foreground: 230 10% 65%; /* Lighter muted text */
+    --muted: 140 8% 18%; /* Dark gray-green for muted backgrounds */
+    --muted-foreground: 140 10% 65%; /* Lighter muted text */
 
-    --accent: 280 80% 70%; /* Bright Magenta-Purple accent for dark mode */
-    --accent-foreground: 0 0% 100%; 
+    --accent: 35 70% 60%; /* Muted Gold/Tan, slightly brighter */
+    --accent-foreground: 35 70% 10%; /* Dark text on accent */
 
     --destructive: 0 70% 50%;
     --destructive-foreground: 0 0% 98%;
 
-    --border: 230 10% 22%; /* Border for dark mode */
-    --input: 230 10% 20%; /* Input background for dark mode */
-    --ring: 280 80% 70%; /* Accent ring for dark mode (matches accent) */
+    --border: 140 10% 22%; /* Border for dark mode */
+    --input: 140 10% 18%; /* Input background for dark mode */
+    --ring: 140 45% 50%; /* Primary ring for dark mode (matches primary) */
     
-    --chart-1: 265 75% 70%; /* Purple */
-    --chart-2: 280 80% 75%; /* Magenta-Purple */
-    --chart-3: 300 70% 65%; /* Deeper Pink/Magenta */
-    --chart-4: 220 20% 50%; /* Cool Gray */
-    --chart-5: 240 10% 70%; /* Lighter Gray */
+    --chart-1: 140 45% 55%; /* Primary Green variant */
+    --chart-2: 35 70% 65%; /* Accent Gold variant */
+    --chart-3: 140 35% 70%; /* Lighter Green */
+    --chart-4: 120 10% 50%; /* Cool Gray for dark */
+    --chart-5: 120 10% 70%; /* Lighter Gray for dark */
 
     /* Dark Sidebar colors adjusted to new theme */
-    --sidebar-background: 230 15% 12%; /* Slightly distinct from main dark bg */
-    --sidebar-foreground: 230 10% 88%;
-    --sidebar-primary: 265 75% 68%; /* Same as main dark primary */
+    --sidebar-background: 140 10% 12%; /* Slightly distinct from main dark bg */
+    --sidebar-foreground: 140 15% 88%;
+    --sidebar-primary: 140 45% 50%; /* Same as main dark primary */
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 265 40% 25%; /* Darker muted purple for accents */
-    --sidebar-accent-foreground: 265 60% 80%; /* Lighter text for dark sidebar accent */
-    --sidebar-border: 230 10% 22%;
-    --sidebar-ring: 280 80% 70%;
+    --sidebar-accent: 140 15% 22%; /* Darker muted green for accents */
+    --sidebar-accent-foreground: 140 30% 80%; /* Lighter text for dark sidebar accent */
+    --sidebar-border: 140 10% 22%;
+    --sidebar-ring: 35 70% 60%; /* Accent color for ring */
   }
 }
 

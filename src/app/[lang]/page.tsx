@@ -13,15 +13,15 @@ export default async function HomePage({ params: { lang } }: { params: { lang: L
 
   return (
     <div className="space-y-16 md:space-y-24">
-      {/* Hero Section - Updated Two-Column Layout */}
+      {/* Hero Section - Updated Two-Column Layout with new color scheme */}
       <section
         id="home"
-        className="text-white bg-gradient-to-br from-slate-900 via-purple-800 to-indigo-800 py-20 md:py-28 lg:py-32"
+        className="text-primary-foreground bg-gradient-to-br from-[hsl(var(--primary))] via-[hsl(140,35%,25%)] to-[hsl(120,25%,15%)] py-20 md:py-28 lg:py-32"
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-12 gap-8 lg:gap-16 items-center">
             <div className="md:col-span-7 lg:col-span-7 text-left">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight text-white">
                 {heroTranslations.title}
               </h1>
               <p className="text-lg md:text-xl text-neutral-200 mb-10 max-w-2xl">
@@ -29,7 +29,7 @@ export default async function HomePage({ params: { lang } }: { params: { lang: L
               </p>
               <div className="flex flex-col sm:flex-row items-start gap-4">
                 <Button
-                  className="bg-purple-600 hover:bg-purple-700 text-white font-semibold px-8 py-3 rounded-lg shadow-lg transform transition hover:scale-105 duration-300 ease-in-out"
+                  className="bg-accent hover:bg-accent/90 text-accent-foreground font-semibold px-8 py-3 rounded-lg shadow-lg transform transition hover:scale-105 duration-300 ease-in-out"
                   // Add Link behavior if this is a navigation item: asChild
                   // href={`/${lang}/try-free`}
                 >
@@ -37,7 +37,7 @@ export default async function HomePage({ params: { lang } }: { params: { lang: L
                 </Button>
                 <Button
                   variant="link"
-                  className="text-white hover:text-purple-300 font-semibold px-8 py-3 group flex items-center transition duration-300 ease-in-out"
+                  className="text-primary-foreground hover:text-primary-foreground/80 font-semibold px-8 py-3 group flex items-center transition duration-300 ease-in-out"
                   // Add Link behavior if this is a navigation item: asChild
                   // href={`/${lang}/request-demo`}
                 >

@@ -52,10 +52,9 @@ export default function Header({ lang, navDictionary, siteName, langSwitcherDict
     { href: `/${lang}#contact`, label: navDictionary.contact },
   ];
 
-  // Base classes for header, always dark with light text
-  const headerBaseClasses = "bg-brand-dark-slate text-brand-off-white shadow-lg sticky top-0 z-50";
-  // For buttons inside the dark header, ensure they are styled for light text on dark background
-  const buttonClasses = "text-brand-off-white hover:bg-white/10 focus-visible:ring-brand-accent-blue";
+  // Use theme colors from globals.css
+  const headerBaseClasses = "bg-background text-foreground shadow-lg sticky top-0 z-50";
+  const buttonClasses = "text-foreground hover:bg-accent/10 focus-visible:ring-primary";
 
 
   if (!isMounted) { 
@@ -81,7 +80,7 @@ export default function Header({ lang, navDictionary, siteName, langSwitcherDict
   return (
     <header className={headerBaseClasses}>
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-        <Link href={`/${lang}`} className="text-2xl font-bold hover:opacity-90 transition-opacity">
+        <Link href={`/${lang}`} className="text-2xl font-bold hover:opacity-90 transition-opacity text-primary">
           {siteName}
         </Link>
 
@@ -98,7 +97,6 @@ export default function Header({ lang, navDictionary, siteName, langSwitcherDict
                 <Globe className="h-5 w-5" />
               </Button>
             </DropdownMenuTrigger>
-            {/* DropdownMenuContent uses card/popover colors from theme, which is fine */}
             <DropdownMenuContent align="end" className="bg-card text-card-foreground border-border">
               {siteConfig.locales.map((locale) => (
                 <DropdownMenuItem key={locale} asChild className="focus:bg-accent focus:text-accent-foreground">
@@ -123,16 +121,16 @@ export default function Header({ lang, navDictionary, siteName, langSwitcherDict
       {/* Mobile Navigation Menu */}
       <div className={cn(
           "md:hidden fixed inset-x-0 top-16 shadow-xl transition-transform duration-300 ease-in-out",
-          "bg-brand-dark-slate text-brand-off-white", // Ensure mobile menu also has dark bg
+          "bg-background text-foreground", // Ensure mobile menu also uses theme colors
           isMobileMenuOpen ? "transform translate-y-0" : "transform -translate-y-[150%]",
-          "p-4 space-y-2"
+          "p-4 space-y-2 border-t border-border"
         )}>
           {navLinks.map((link) => (
              <Button key={link.label} variant="ghost" asChild className={cn("w-full justify-start text-base py-3", buttonClasses)} onClick={() => setIsMobileMenuOpen(false)}>
                 <Link href={link.href}>{link.label}</Link>
              </Button>
           ))}
-          <div className="pt-2 border-t border-white/20">
+          <div className="pt-2 border-t border-border/50">
             <p className="px-3 py-2 text-sm font-medium">{langSwitcherDictionary.label}</p>
             {siteConfig.locales.map((locale) => (
               <Button key={locale} variant="ghost" asChild className={cn("w-full justify-start text-base py-3", buttonClasses)} onClick={() => setIsMobileMenuOpen(false)}>

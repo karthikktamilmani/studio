@@ -5,7 +5,7 @@ import ContactForm from '@/components/ContactForm';
 import ServiceCard from '@/components/ServiceCard';
 import { Phone, Mail, MapPin, ChevronRight } from 'lucide-react';
 import Image from 'next/image';
-import { Button } from '@/components/ui/button'; 
+import { Button } from '@/components/ui/button';
 
 export default async function HomePage({ params: { lang } }: { params: { lang: Locale } }) {
   const dictionary = await getDictionary(lang);
@@ -13,29 +13,29 @@ export default async function HomePage({ params: { lang } }: { params: { lang: L
 
   return (
     <div className="space-y-16 md:space-y-24">
-      {/* Hero Section - Updated with fixed dark background and light text */}
+      {/* Hero Section - No specific background color, uses page background */}
       <section
         id="home"
-        className="py-20 md:py-28 lg:py-32 bg-brand-dark-slate text-brand-off-white" 
+        className="py-20 md:py-28 lg:py-32 text-foreground" // Text color uses theme foreground
       >
         <div className="container mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid md:grid-cols-12 gap-8 lg:gap-16 items-center">
             <div className="md:col-span-7 lg:col-span-7 text-left">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight"> 
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold mb-6 leading-tight text-primary">
                 {heroTranslations.title}
               </h1>
-              <p className="text-lg md:text-xl text-brand-off-white/80 mb-10 max-w-2xl"> 
+              <p className="text-lg md:text-xl text-foreground/80 mb-10 max-w-2xl">
                 {heroTranslations.subtitle}
               </p>
               <div className="flex flex-col sm:flex-row items-start gap-4">
                 <Button
-                  className="bg-brand-accent-blue hover:bg-brand-accent-blue/90 text-white font-semibold px-8 py-3 rounded-lg shadow-lg transform transition hover:scale-105 duration-300 ease-in-out"
+                  className="bg-primary hover:bg-primary/90 text-primary-foreground font-semibold px-8 py-3 rounded-lg shadow-lg transform transition hover:scale-105 duration-300 ease-in-out"
                 >
                   {heroTranslations.ctaPrimary || "Try it Free"}
                 </Button>
                 <Button
                   variant="link"
-                  className="text-brand-accent-blue hover:text-brand-accent-blue/80 font-semibold px-8 py-3 group flex items-center transition duration-300 ease-in-out" 
+                  className="text-accent hover:text-accent/80 font-semibold px-8 py-3 group flex items-center transition duration-300 ease-in-out"
                 >
                   {heroTranslations.ctaSecondary || "Request a Demo"}
                   <ChevronRight className="ml-2 h-5 w-5 transition-transform duration-300 ease-in-out group-hover:translate-x-1" />

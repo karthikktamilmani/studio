@@ -64,21 +64,12 @@ export default {
   				'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
   				border: 'hsl(var(--sidebar-border))',
   				ring: 'hsl(var(--sidebar-ring))'
-  			},
-        // Custom brand colors for fixed styling
-        'brand-dark-slate': '#2C3E50', // var(--color-bg-primary-dark)
-        'brand-light-grey': '#ECF0F1', // var(--color-bg-secondary-light)
-        'brand-text-dark': '#2C3E50',  // var(--color-text-dark)
-        'brand-off-white': '#F8F8F8',   // var(--color-text-light)
-        'brand-accent-blue': '#3498DB', // var(--color-accent-blue)
-        'brand-accent-green': '#2ECC71',// var(--color-accent-green)
-        'brand-alert-red': '#E74C3C',   // var(--color-alert-red)
-        'brand-border': '#BDC3C7',      // var(--color-border)
+  			}
   		},
   		borderRadius: {
-  			lg: 'var(--radius)', // 0.5rem
-  			md: 'calc(var(--radius) - 2px)', // 0.5rem - 2px
-  			sm: 'calc(var(--radius) - 4px)'  // 0.5rem - 4px
+        lg: "var(--radius)", 
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
   		},
   		keyframes: {
   			'accordion-down': {

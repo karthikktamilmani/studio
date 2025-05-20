@@ -1,105 +1,104 @@
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
   :root {
-    /* Light Theme based on user's new scheme */
-    --background: 204 17% 94%; /* #ECF0F1 Light Grey */
-    --foreground: 210 29% 24%; /* #2C3E50 Dark Slate Grey */
+    /* Light Theme - Professional English Palette */
+    --background: 40 33% 96%; /* Creamy Off-White */
+    --foreground: 120 25% 20%; /* Dark Forest Green */
 
     --card: 0 0% 100%; /* White */
-    --card-foreground: 210 29% 24%; /* #2C3E50 */
+    --card-foreground: 120 25% 20%; /* Dark Forest Green */
 
     --popover: 0 0% 100%; /* White */
-    --popover-foreground: 210 29% 24%; /* #2C3E50 */
+    --popover-foreground: 120 25% 20%; /* Dark Forest Green */
 
-    --primary: 207 68% 53%; /* #3498DB Vibrant Blue */
-    --primary-foreground: 0 0% 100%; /* White */
+    --primary: 120 60% 35%; /* Rich Forest Green */
+    --primary-foreground: 40 100% 90%; /* Light Cream for text on primary */
 
-    --secondary: 145 63% 49%; /* #2ECC71 Subtle Green */
-    --secondary-foreground: 0 0% 100%; /* White */
+    --secondary: 40 50% 60%; /* Muted Gold/Tan */
+    --secondary-foreground: 120 25% 20%; /* Dark Forest Green for text on secondary */
 
-    --muted: 204 17% 90%; /* Lighter shade of #ECF0F1 */
-    --muted-foreground: 210 29% 45%; /* Lighter Dark Slate Grey */
+    --muted: 40 20% 90%; /* Lighter shade of Creamy Off-White */
+    --muted-foreground: 0 0% 45%; /* Mid Grey for muted text */
 
-    --accent: 207 68% 53%; /* #3498DB Vibrant Blue (for highlights, active states) */
-    --accent-foreground: 0 0% 100%; /* White */
+    --accent: 40 50% 60%; /* Muted Gold/Tan (for highlights, active states) */
+    --accent-foreground: 120 25% 15%; /* Darker Forest Green for text on accent */
 
-    --destructive: 6 79% 57%; /* #E74C3C Orange-Red */
-    --destructive-foreground: 0 0% 97%; /* #F8F8F8 Off-White */
+    --destructive: 0 60% 50%; /* Classic Red */
+    --destructive-foreground: 0 0% 97%; /* Off-White */
 
-    --border: 204 10% 76%; /* #BDC3C7 Lighter Grey */
-    --input: 204 10% 76%; /* #BDC3C7 for input borders */
-    --ring: 207 68% 53%; /* #3498DB Vibrant Blue for focus rings */
+    --border: 0 0% 80%; /* Light Grey */
+    --input: 0 0% 85%; /* Slightly darker Light Grey for input borders */
+    --ring: 120 60% 40%; /* Slightly desaturated Forest Green for focus rings */
 
-    --radius: 0.5rem; /* Updated radius */
+    --radius: 0.375rem; /* Slightly reduced radius for a more classic look */
 
     /* Chart Colors (Light Theme) */
-    --chart-1: 207 68% 53%; /* Vibrant Blue */
-    --chart-2: 145 63% 49%; /* Subtle Green */
-    --chart-3: 207 60% 70%; /* Lighter Blue */
-    --chart-4: 145 55% 65%; /* Lighter Green */
-    --chart-5: 210 20% 65%; /* Mid Grey */
+    --chart-1: 120 60% 35%; /* Rich Forest Green */
+    --chart-2: 40 50% 60%; /* Muted Gold/Tan */
+    --chart-3: 120 50% 50%; /* Lighter Forest Green */
+    --chart-4: 40 40% 70%; /* Lighter Gold/Tan */
+    --chart-5: 0 0% 50%;   /* Mid Grey */
 
     /* Sidebar Colors (Light Theme) */
-    --sidebar-background: 204 17% 94%; /* #ECF0F1 */
-    --sidebar-foreground: 210 29% 24%; /* #2C3E50 */
-    --sidebar-primary: 207 68% 53%; /* #3498DB */
-    --sidebar-primary-foreground: 0 0% 100%; /* White */
-    --sidebar-accent: 145 63% 49%; /* #2ECC71 */
-    --sidebar-accent-foreground: 0 0% 100%; /* White */
-    --sidebar-border: 204 10% 85%; /* Lighter grey than main border */
-    --sidebar-ring: 207 68% 53%; /* #3498DB */
+    --sidebar-background: 40 33% 94%; /* Slightly darker Cream for sidebar */
+    --sidebar-foreground: 120 25% 20%; /* Dark Forest Green */
+    --sidebar-primary: 120 60% 35%; /* Rich Forest Green */
+    --sidebar-primary-foreground: 40 100% 90%; /* Light Cream */
+    --sidebar-accent: 40 50% 60%; /* Muted Gold/Tan */
+    --sidebar-accent-foreground: 120 25% 15%; /* Darker Forest Green */
+    --sidebar-border: 0 0% 75%; /* Slightly darker grey than main border */
+    --sidebar-ring: 120 60% 40%;
   }
 
   .dark {
-    /* Dark Theme based on user's new scheme */
-    --background: 210 29% 24%; /* #2C3E50 Dark Slate Grey */
-    --foreground: 0 0% 97%; /* #F8F8F8 Off-White */
+    /* Dark Theme - Professional English Palette */
+    --background: 120 25% 18%; /* Very Dark Forest Green */
+    --foreground: 40 33% 92%; /* Light Cream/Off-White */
 
-    --card: 210 25% 29%; /* #34495E - Slightly lighter than bg */
-    --card-foreground: 0 0% 97%; /* #F8F8F8 */
+    --card: 120 20% 22%; /* Slightly lighter Dark Green for cards */
+    --card-foreground: 40 33% 92%; /* Light Cream */
 
-    --popover: 210 25% 29%; /* #34495E */
-    --popover-foreground: 0 0% 97%; /* #F8F8F8 */
+    --popover: 120 20% 22%; /* Slightly lighter Dark Green */
+    --popover-foreground: 40 33% 92%; /* Light Cream */
 
-    --primary: 207 75% 65%; /* Brighter #3498DB for dark mode */
-    --primary-foreground: 210 29% 15%; /* Darker text for contrast on bright blue */
+    --primary: 120 55% 50%; /* Brighter Forest Green for dark mode */
+    --primary-foreground: 120 25% 10%; /* Very Dark Green for text on primary */
 
-    --secondary: 145 60% 60%; /* Brighter #2ECC71 for dark mode */
-    --secondary-foreground: 210 29% 15%; /* Darker text for contrast on bright green */
+    --secondary: 40 60% 70%; /* Brighter Muted Gold/Tan for dark mode */
+    --secondary-foreground: 120 25% 10%; /* Very Dark Green for text on secondary */
 
-    --muted: 210 29% 20%; /* Darker than background */
-    --muted-foreground: 204 10% 65%; /* Lighter grey text */
+    --muted: 120 25% 15%; /* Darker than background */
+    --muted-foreground: 0 0% 65%; /* Lighter grey text */
 
-    --accent: 207 75% 65%; /* Brighter #3498DB (for highlights, active states) */
-    --accent-foreground: 210 29% 15%; /* Darker text on bright blue */
+    --accent: 40 60% 70%; /* Brighter Muted Gold/Tan (for highlights) */
+    --accent-foreground: 120 25% 10%; /* Very Dark Green on accent */
 
-    --destructive: 6 80% 65%; /* Brighter #E74C3C for dark mode */
-    --destructive-foreground: 0 0% 97%; /* #F8F8F8 */
+    --destructive: 0 65% 60%; /* Brighter Classic Red for dark mode */
+    --destructive-foreground: 0 0% 97%; /* Off-White */
 
-    --border: 210 20% 40%; /* #4A6572 - Mid-tone grey for dark mode borders */
-    --input: 210 20% 40%; /* #4A6572 for input borders */
-    --ring: 207 75% 65%; /* Brighter #3498DB for focus rings */
-    
+    --border: 0 0% 35%; /* Mid-tone grey for dark mode borders */
+    --input: 0 0% 40%; /* Slightly lighter grey for input borders */
+    --ring: 120 55% 55%; /* Brighter Forest Green for focus rings */
+
     /* Chart Colors (Dark Theme) */
-    --chart-1: 207 75% 65%; /* Brighter Blue */
-    --chart-2: 145 60% 60%; /* Brighter Green */
-    --chart-3: 207 65% 75%; /* Even Lighter Blue */
-    --chart-4: 145 50% 70%; /* Even Lighter Green */
-    --chart-5: 0 0% 97%;   /* Off-White */
-
+    --chart-1: 120 55% 50%; /* Brighter Forest Green */
+    --chart-2: 40 60% 70%; /* Brighter Muted Gold/Tan */
+    --chart-3: 120 45% 60%; /* Even Lighter Forest Green */
+    --chart-4: 40 50% 80%; /* Even Lighter Gold/Tan */
+    --chart-5: 0 0% 80%;   /* Light Grey */
+    
     /* Sidebar Colors (Dark Theme) */
-    --sidebar-background: 210 29% 24%; /* #2C3E50 */
-    --sidebar-foreground: 0 0% 97%; /* #F8F8F8 */
-    --sidebar-primary: 207 75% 65%; /* Brighter Blue */
-    --sidebar-primary-foreground: 210 29% 15%;
-    --sidebar-accent: 145 60% 60%; /* Brighter Green */
-    --sidebar-accent-foreground: 210 29% 15%;
-    --sidebar-border: 210 20% 35%; /* Darker border */
-    --sidebar-ring: 207 75% 65%;
+    --sidebar-background: 120 25% 16%; /* Darkest Green for sidebar */
+    --sidebar-foreground: 40 33% 92%; /* Light Cream */
+    --sidebar-primary: 120 55% 50%; /* Brighter Forest Green */
+    --sidebar-primary-foreground: 120 25% 10%;
+    --sidebar-accent: 40 60% 70%; /* Brighter Muted Gold/Tan */
+    --sidebar-accent-foreground: 120 25% 10%;
+    --sidebar-border: 0 0% 30%; /* Darker border */
+    --sidebar-ring: 120 55% 55%;
   }
 }
 

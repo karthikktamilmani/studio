@@ -11,14 +11,14 @@ interface ServiceCardProps {
 
 export default function ServiceCard({ imageUrl, imageHint, name, description }: ServiceCardProps) {
   return (
-    <Card className="shadow-md hover:shadow-lg transition-all duration-300 ease-in-out flex flex-col overflow-hidden h-full border-border hover:border-primary/30">
-      <CardHeader className="p-0 relative aspect-[3/2] w-full">
+    <Card className="shadow-md hover:shadow-xl transition-all duration-300 ease-in-out transform hover:scale-105 flex flex-col overflow-hidden h-full border-border hover:border-primary/30 group">
+      <CardHeader className="p-0 relative aspect-[3/2] w-full overflow-hidden">
         <Image
           src={imageUrl}
           alt={name || 'Service Image'}
           fill
           sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 25vw"
-          className="object-cover"
+          className="object-cover group-hover:scale-105 transition-transform duration-300 ease-in-out"
           data-ai-hint={imageHint}
         />
       </CardHeader>

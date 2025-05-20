@@ -11,16 +11,19 @@ export default async function HomePage({ params: { lang } }: { params: { lang: L
 
   return (
     <div className="space-y-16 md:space-y-24">
-      {/* Hero Section - Enhanced with Glassmorphism */}
-      <section 
-        id="home" 
-        className="text-center py-16 md:py-24 bg-card/50 dark:bg-card/30 backdrop-blur-md rounded-xl shadow-2xl border border-foreground/5"
+      {/* Hero Section - Image Background */}
+      <section
+        id="home"
+        className="relative text-center py-24 md:py-32 bg-cover bg-center"
+        style={{ backgroundImage: "url('https://placehold.co/1920x600.png')" }}
+        data-ai-hint="abstract network"
       >
-        <div className="container mx-auto px-4">
-          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-primary mb-6 leading-tight">
+        <div className="absolute inset-0 bg-black/60 backdrop-brightness-75"></div> {/* Overlay for contrast */}
+        <div className="relative container mx-auto px-4 z-10">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight drop-shadow-md">
             {heroTranslations.title}
           </h1>
-          <p className="text-lg md:text-xl text-foreground/90 dark:text-foreground/80 max-w-3xl mx-auto">
+          <p className="text-lg md:text-xl text-neutral-200 max-w-3xl mx-auto drop-shadow-sm">
             {heroTranslations.subtitle}
           </p>
         </div>
@@ -48,8 +51,8 @@ export default async function HomePage({ params: { lang } }: { params: { lang: L
       </section>
 
       {/* Contact Section - Enhanced with Glassmorphism and Asymmetrical Layout */}
-      <section 
-        id="contact" 
+      <section
+        id="contact"
         className="py-12 md:py-16 bg-card/50 dark:bg-card/30 backdrop-blur-md rounded-xl shadow-xl border border-foreground/5"
       >
         <div className="container mx-auto px-4">
